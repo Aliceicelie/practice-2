@@ -1,0 +1,33 @@
+body {
+    margin: auto 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.main_wrapper {
+    width: 1300px;
+}
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav {
+    width: 400px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+}
+.userIcon {
+    display: flex;
+    align-items: center;
+}
+.userIcon img {
+    width: 40px;
+    height: 40px;
+}
