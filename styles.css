@@ -42,7 +42,7 @@ nav ul {
 .mainContentWrapper {
     background-color: whitesmoke;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .firstColumn {
     background-color: white;
@@ -69,22 +69,28 @@ nav ul {
 .content ul input {
     margin: 0;
 }
+.secondColumn {
+    width: 950px;
+    /* display: flex;
+    justify-content: space-around; */
+}
 .searchWrapper {
+    height: 50px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .searchLine {
     background-color: white;
     display: flex;
     align-items: center;
-    width: 500px;
+    width: 750px;
     border: solid 1px lightgrey;
     border-radius: 5px;
     padding: 5px;
 }
 .searchLine input {
     border: none;
-    width: 450px;
+    width: 750px;
     height: 30px;
     margin-left: 5px;
 }
