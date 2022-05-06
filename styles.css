@@ -41,9 +41,33 @@ nav ul {
 }
 .mainContentWrapper {
     background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
 }
-.secondColumn {
-    width: 900px;
+.firstColumn {
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+.fullCntn {
+    margin: 30px;
+}
+.firstColumn .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.firstColumn .head p {
+    color: grey;
+}
+.content ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+.content ul input {
+    margin: 0;
 }
 .searchWrapper {
     display: flex;
