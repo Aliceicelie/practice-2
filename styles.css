@@ -41,7 +41,9 @@ nav ul {
 }
 .mainContentWrapper {
     background-color: whitesmoke;
-    width: 750px;
+}
+.secondColumn {
+    width: 900px;
 }
 .searchWrapper {
     display: flex;
