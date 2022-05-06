@@ -5,6 +5,9 @@ body {
 }
 .main_wrapper {
     width: 1300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 header {
     background-color: white;
@@ -42,22 +45,24 @@ nav ul {
 .mainContentWrapper {
     background-color: whitesmoke;
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
+    /* flex-direction: column; */
 }
-.firstColumn {
+.contentColumn {
     background-color: white;
     border: 1px solid lightgrey;
     border-radius: 5px;
+    width: 274px;
 }
 .fullCntn {
     margin: 30px;
 }
-.firstColumn .head {
+.contentColumn .head {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.firstColumn .head p {
+.contentColumn .head p {
     color: grey;
 }
 .content ul {
@@ -69,15 +74,17 @@ nav ul {
 .content ul input {
     margin: 0;
 }
-.secondColumn {
-    width: 950px;
-    /* display: flex;
-    justify-content: space-around; */
-}
 .searchWrapper {
+    margin: 40px 20px 20px 20px;
+    width: 950px;
     height: 50px;
     display: flex;
     justify-content: space-between;
+}
+.WrapperForSearch {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: end;
 }
 .searchLine {
     background-color: white;
@@ -99,4 +106,9 @@ nav ul {
     color: white;
     box-shadow: 1px blue;
     width: 150px;
+}
+.firstContainer {
+    border: solid 1px lightgrey;
+    border-radius: 5px;
+    background-color: white;
 }
