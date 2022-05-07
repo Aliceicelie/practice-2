@@ -44,18 +44,20 @@ nav ul {
 }
 .mainContentWrapper {
     background-color: whitesmoke;
-    display: flex;
-    justify-content: end;
-    /* flex-direction: column; */
 }
 .contentColumn {
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+.fullCntn {
+    margin-left: 15px;
+    padding: 30px;
+    width: 215px;
+    height: 400px;
     background-color: white;
     border: 1px solid lightgrey;
     border-radius: 5px;
-    width: 274px;
-}
-.fullCntn {
-    margin: 30px;
 }
 .contentColumn .head {
     display: flex;
@@ -111,4 +113,8 @@ nav ul {
     border: solid 1px lightgrey;
     border-radius: 5px;
     background-color: white;
+    width: 920px;
+    height: 130px;
+    padding-left: 30px;
+    margin: 0 20px 20px 20px;
 }
