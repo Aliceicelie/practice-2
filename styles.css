@@ -134,4 +134,17 @@ nav ul {
 .allBtn {
     margin: 0 20px 20px 20px;
     color: rgb(56, 54, 54);
+    display: flex;
+    align-items: center;
+}
+.allBtn #kirby {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+.allBtn #kirby_logo2 {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    visibility: hidden;
 }
