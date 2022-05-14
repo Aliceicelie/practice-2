@@ -113,6 +113,9 @@ nav ul {
     display: flex;
     flex-direction: column;
 }
+#show_more {
+    display: none;
+}
 .firstContainer {
     border: solid 1px lightgrey;
     border-radius: 5px;
