@@ -1,3 +1,12 @@
+/* clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
 body {
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -29,6 +38,14 @@ nav ul {
     justify-content: space-between;
     font-size: large;
 }
+nav ul a {
+    color: black;
+    text-decoration: none;
+}
+nav ul a:hover {
+    text-decoration: underline;
+    color: darkgrey
+}
 .userIcon {
     display: flex;
     align-items: center;
@@ -44,27 +61,24 @@ nav ul {
 }
 .mainContentWrapper {
     background-color: whitesmoke;
-}
-.contentColumn {
-    width: 1300px;
     display: flex;
     justify-content: space-between;
 }
 .fullCntn {
     margin-left: 15px;
     padding: 30px;
-    width: 215px;
-    height: 400px;
     background-color: white;
     border: 1px solid lightgrey;
     border-radius: 5px;
+    height: 300px;
+    width: 200px;
 }
-.contentColumn .head {
+.fullCntn .head {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.contentColumn .head p {
+.fullCntn .head p {
     color: grey;
 }
 .content ul {
@@ -97,8 +111,12 @@ nav ul {
     border-radius: 5px;
     padding: 5px;
 }
+.searchLine:active {
+    outline: 1px solid lightblue;
+}
 .searchLine input {
     border: none;
+    outline: none;
     width: 750px;
     height: 30px;
     margin-left: 5px;
@@ -112,27 +130,25 @@ nav ul {
 .boxForContainers {
     display: flex;
     flex-direction: column;
+
 }
 #show_more {
     display: none;
 }
-.firstContainer {
+.job {
     border: solid 1px lightgrey;
     border-radius: 5px;
     background-color: white;
-    width: 920px;
-    height: 130px;
     padding-left: 30px;
     margin: 0 20px 20px 20px;
+    width: 918px;
 }
-.scndContainer {
-    border: solid 1px lightgrey;
-    border-radius: 5px;
-    background-color: white;
-    width: 920px;
-    height: 230px;
-    padding-left: 30px;
-    margin: 0 20px 20px 20px;
+.job :any-link:hover {
+    text-decoration: underline;
+}
+.job :any-link {
+    text-decoration: none;
+    color: black;
 }
 .allBtn {
     margin: 0 20px 20px 20px;

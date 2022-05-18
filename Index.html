@@ -13,10 +13,10 @@
             <img src="logos/logo.png" alt="mainLogo">
                 <nav>
                     <ul>
-                        <li>Home</li>
-                        <li>Job Listing</li>
-                        <li>Events</li>
-                        <li>Report Hours</li>
+                        <li><a href = '#'>Home</a></li>
+                        <li><a href = '#'>Job Listing</a></li>
+                        <li><a href = '#'>Events</a></li>
+                        <li><a href = '#'>Report Hours</a></li>
                     </ul>
                 </nav>
                     <div class="userIcon">
@@ -34,15 +34,14 @@
             <div class="searchWrapper">
                 <div class="searchLine">
                     <img src="logos/search_icon.svg">
-                        <input type="search" placeholder="Search for the jobs">
+                        <input type="search" placeholder="Search for the jobs" id="search">
                             <img src="logos/close_icon.svg">
                 </div>
-                    <input type="button" id="btn" value="SEARCH">
+                    <button id="btn">SEARCH</button>
             </div>
         </div>
 
         <div class="mainContentWrapper">
-            <div class="contentColumn">
                 <div class="fullCntn">
                     <div class="head">
                         <b>Filter</b>
@@ -51,74 +50,15 @@
     
                     <div class="content">
                         <p>Area of work</p>
-                            <ul>
-                                <div class="chk1">
-                                    <input type="checkbox" id="Default jobs">
-                                        <label for="Default jobs">Default jobs</label>
-                                </div>
-
-                                <div class="chk2">
-                                    <input type="checkbox" id="Advertisement">
-                                        <label for="Advertisement">Advertisement</label>
-                                </div>
-
-                                <div class="chk3">
-                                    <input type="checkbox" id="vets">
-                                        <label for="vets">Vets Cup 2022 Jacksonville</label>
-                                </div>
-                            </ul>
+                            <ul id="ul"> </ul>
                     </div>
                 </div>
                     <div class="boxForContainers" id="boxForContainers">
-                        <div class="show_less" id="show_less">
-                            <div class="firstContainer">
-                                <h1>Set Up</h1>
-                                    <p>Jacksonville</p>
-                            </div>
-        
-                            <div class="scndContainer">
-                                <h1>CEO of Age International</h1>
-                                    <p>New York, Green Street</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, fuga. Tempora, delectus iste? Laborum incidunt cupiditate neque deserunt! Voluptatum quisquam ipsum perferendis quae atque deleniti maxime magnam facilis consequuntur sed.</p>
-                            </div>
-    
-                            <div class="firstContainer">
-                                <h1>Set Up</h1>
-                                    <p>Jacksonville</p>
-                            </div>
-        
-                            <div class="scndContainer">
-                                <h1>CEO of Age International</h1>
-                                    <p>New York, Green Street</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, fuga. Tempora, delectus iste? Laborum incidunt cupiditate neque deserunt! Voluptatum quisquam ipsum perferendis quae atque deleniti maxime magnam facilis consequuntur sed.</p>
-                            </div>
-    
-                             <div class="firstContainer">
-                                <h1>Set Up</h1>
-                                    <p>Jacksonville</p>
-                            </div>
-                        </div>
-    
-                        <div class="show_more" id="show_more">
-                            <div class="scndContainer" id="hideBox1">
-                                <h1>CEO of Age International</h1>
-                                    <p>New York, Green Street</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, fuga. Tempora, delectus iste? Laborum incidunt cupiditate neque deserunt! Voluptatum quisquam ipsum perferendis quae atque deleniti maxime magnam facilis consequuntur sed.</p>
-                            </div>
-        
-                            <div class="firstContainer" id="hideBox2">
-                                <h1>Set Up</h1>
-                                    <p>Jacksonville</p>
-                            </div>
-                        </div>
-
                         <div class="allBtn">
                             <p>View all</p>
                             <img src="logos/kirby_logo.png" alt="kirby_logo" id="kirby">
                         </div>
                     </div>
-            </div>
-               
         </div>
     </div>
 <script src="app.js"></script>
