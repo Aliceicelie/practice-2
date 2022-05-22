@@ -70,8 +70,7 @@ nav ul a:hover {
     background-color: white;
     border: 1px solid lightgrey;
     border-radius: 5px;
-    height: 300px;
-    width: 200px;
+    height: 292px;
 }
 .fullCntn .head {
     display: flex;
@@ -93,7 +92,6 @@ nav ul a:hover {
 .searchWrapper {
     margin: 40px 20px 20px 20px;
     width: 950px;
-    height: 50px;
     display: flex;
     justify-content: space-between;
 }
@@ -106,22 +104,32 @@ nav ul a:hover {
     background-color: white;
     display: flex;
     align-items: center;
-    width: 750px;
-    border: solid 1px lightgrey;
-    border-radius: 5px;
-    padding: 5px;
 }
-.searchLine:active {
+.searchLine input:focus {
     outline: 1px solid lightblue;
+    border: none;
 }
 .searchLine input {
-    border: none;
+    border: solid 1px lightgrey;
+    border-radius: 5px;
     outline: none;
-    width: 750px;
-    height: 30px;
-    margin-left: 5px;
+    height: 55px;
+    margin-left: -1px;
+    margin-right: -55px;
+    width: 710px;
+    padding: 0 35px 0 35px;
 }
-.searchWrapper #btn {
+.searchLine #close {
+    margin: 5px;
+    position: relative;
+    right: 10px;
+}
+.searchLine #searchIcon {
+    margin-left: 10px;
+    position: relative;
+    left: -656px;
+}
+.searchWrapper #searchBtn {
     background: rgb(3, 3, 100);
     color: white;
     box-shadow: 1px blue;
@@ -130,10 +138,10 @@ nav ul a:hover {
 .boxForContainers {
     display: flex;
     flex-direction: column;
-
 }
-#show_more {
-    display: none;
+.jobr {
+    display: flex;
+    flex-direction: column;
 }
 .job {
     border: solid 1px lightgrey;
@@ -151,6 +159,7 @@ nav ul a:hover {
     color: black;
 }
 .allBtn {
+    width: 105px;
     margin: 0 20px 20px 20px;
     color: rgb(56, 54, 54);
     display: flex;

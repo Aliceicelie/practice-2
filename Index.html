@@ -33,11 +33,11 @@
         <div class="WrapperForSearch">
             <div class="searchWrapper">
                 <div class="searchLine">
-                    <img src="logos/search_icon.svg">
-                        <input type="search" placeholder="Search for the jobs" id="search">
-                            <img src="logos/close_icon.svg">
+                        <input type="search" placeholder="Search for the jobs" id="searchInput">
+                        <img id="searchIcon" src="logos/search_icon.svg">
+                        <img id="close" src="logos/close_icon.svg">
                 </div>
-                    <button id="btn">SEARCH</button>
+                    <button id="searchBtn">SEARCH</button>
             </div>
         </div>
 
@@ -54,7 +54,8 @@
                     </div>
                 </div>
                     <div class="boxForContainers" id="boxForContainers">
-                        <div class="allBtn">
+                        <div class="jobr" id="jobr"></div>
+                        <div class="allBtn" id="allBtn" data-is-expanded="0">
                             <p>View all</p>
                             <img src="logos/kirby_logo.png" alt="kirby_logo" id="kirby">
                         </div>
